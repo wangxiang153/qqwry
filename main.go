@@ -13,7 +13,7 @@ import (
 func main() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
 	datFile := flag.String("qqwry", "./qqwry.dat", "纯真 IP 库的地址")
-	port := flag.String("port", "2060", "HTTP 请求监听端口号")
+	port := flag.String("port", "9000", "HTTP 请求监听端口号")
 	flag.Parse()
 
 	IPData.FilePath = *datFile
